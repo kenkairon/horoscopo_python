@@ -15,9 +15,11 @@ signos = {
 
 while True:
 
-    salir = int(input("Quieres salir ingresa 1 \n saber tu signo 2: "))
+    salir = int(input("Opción (1) - Para saber tu signo\nOpción (0) - Salir\nElige una opción: "))
 
-    if salir == 1:
+
+    if salir == 0:
+        print("Saliendo........")
         break
     else:
         mes = int(input("Ingresa el mes (1-12): "))
