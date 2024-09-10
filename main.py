@@ -1,49 +1,72 @@
-def obtener_signo_zodiacal(mes, dia):
-    if (mes == 1 and dia >= 20) or (mes == 2 and dia <= 18):
-        signo = 'Acuario'
-        descripcion = 'Los acuario son personas amables, inteligentes y llenas de curiosidad por el mundo.'
-    elif (mes == 2 and dia >= 19) or (mes == 3 and dia <= 20):
-        signo = 'Piscis'
-        descripcion = 'Los piscis son personas sensibles y emocionales, con una gran capacidad de empatía.'
-    elif (mes == 3 and dia >= 21) or (mes == 4 and dia <= 19):
-        signo = 'Aries'
-        descripcion = 'Los aries son personas valientes, enérgicas y llenas de pasión.'
-    elif (mes == 4 and dia >= 20) or (mes == 5 and dia <= 20):
-        signo = 'Tauro'
-        descripcion = 'Los tauro son personas prácticas y realistas, con un fuerte sentido de la determinación.'
-    elif (mes == 5 and dia >= 21) or (mes == 6 and dia <= 20):
-        signo = 'Géminis'
-        descripcion = 'Los géminis son personas curiosas y sociables, con una mente abierta y adaptable.'
-    elif (mes == 6 and dia >= 21) or (mes == 7 and dia <= 22):
-        signo = 'Cáncer'
-        descripcion = 'Los cáncer son personas emocionales y sensibles, con una gran capacidad de empatía.'
-    elif (mes == 7 and dia >= 23) or (mes == 8 and dia <= 22):
-        signo = 'Leo'
-        descripcion = 'Los leo son personas valientes y apasionadas, con una gran autoconfianza.'
-    elif (mes == 8 and dia >= 23) or (mes == 9 and dia <= 22):
-        signo = 'Virgo'
-        descripcion = 'Los virgo son personas meticulosas y perfeccionistas, con una gran atención al detalle.'
-    elif (mes == 9 and dia >= 23) or (mes == 10 and dia <= 22):
-        signo = 'Libra'
-        descripcion = 'Los libra son personas equilibradas y justas, con una gran habilidad para encontrar la armonía.'
-    elif (mes == 10 and dia >= 23) or (mes == 11 and dia <= 21):
-        signo = 'Escorpión'
-        descripcion = 'Los escorpio son personas intensas y apasionadas, con una gran profundidad emocional.'
-    elif (mes == 11 and dia >= 22) or (mes == 12 and dia <= 21):
-        signo = 'Sagitario'
-        descripcion = 'Los sagitario son personas aventureras y optimistas, con una gran pasión por la exploración.'
-    elif (mes == 12 and dia >= 22) or (mes == 1 and dia <= 19):
-        signo = 'Capricornio'
-        descripcion = 'Los capricornio son personas ambiciosas y determinadas, con una gran capacidad para el trabajo duro.'
+signos = {
+    'Acuario': 'Los acuario son personas amables, inteligentes y llenas de curiosidad por el mundo.',
+    'Piscis': 'Los piscis son personas sensibles y emocionales, con una gran capacidad de empatía.',
+    'Aries': 'Los aries son personas enérgicas, decididas y llenas de coraje, siempre listas para nuevos desafíos.',
+    'Tauro': 'Los tauro son personas prácticas, pacientes y con una gran determinación para alcanzar sus metas.',
+    'Géminis': 'Los géminis son personas versátiles, comunicativas y llenas de energía intelectual.',
+    'Cáncer': 'Los cáncer son personas protectoras, emocionales y muy conectadas con su hogar y sus seres queridos.',
+    'Leo': 'Los leo son personas carismáticas, generosas y con una gran capacidad para liderar y brillar en cualquier situación.',
+    'Virgo': 'Los virgo son personas organizadas, detallistas y muy prácticas, siempre buscando la perfección en lo que hacen.',
+    'Libra': 'Los libra son personas equilibradas, diplomáticas y con un gran sentido de la justicia y la armonía.',
+    'Escorpio': 'Los escorpio son personas intensas, apasionadas y con una gran capacidad de transformación personal.',
+    'Sagitario': 'Los sagitario son personas optimistas, aventureras y llenas de ganas de explorar y aprender.',
+    'Capricornio': 'Los capricornio son personas disciplinadas, responsables y muy enfocadas en sus objetivos a largo plazo.'
+}
+
+while True:
+
+    salir = int(input("Quieres salir ingresa 1 \n saber tu signo 2: "))
+
+    if salir == 1:
+        break
     else:
-        signo = 'Desconocido'
-        descripcion = 'Fecha fuera del rango de signos zodiacales.'
+        mes = int(input("Ingresa el mes (1-12): "))
+        dia = int(input("Ingresa el día (1-31): "))
 
-    return signo, descripcion
-
-# Ejemplo de uso:
-mes = int(input("Ingresa el mes (1-12): "))
-dia = int(input("Ingresa el día (1-31): "))
-signo, descripcion = obtener_signo_zodiacal(mes, dia)
-print(f"Signo: {signo}")
-print(f"Descripción: {descripcion}")
+    for signo, descripcion in signos.items():
+        if (mes == 1 and dia >= 20) or (mes == 2 and dia <= 18):           
+                if signo == "Acuario":
+                    print(signo, descripcion)
+        elif (mes == 2 and dia >= 19) or (mes == 3 and dia <= 20):          
+                if signo == "Piscis":
+                    print(signo, descripcion)
+        elif (mes == 3 and dia >= 21) or (mes == 4 and dia <= 19):            
+                if signo == "Aries":
+                    print(signo, descripcion)
+        elif (mes == 4 and dia >= 20) or (mes == 5 and dia <= 20):            
+                if signo == "Tauro":
+                    print(signo, descripcion)
+        elif (mes == 5 and dia >= 21) or (mes == 6 and dia <= 20):          
+                if signo == "Géminis":
+                    print(signo, descripcion)
+        elif (mes == 6 and dia >= 21) or (mes == 7 and dia <= 22):            
+                if signo == "Cáncer":
+                    print(signo, descripcion)
+        elif (mes == 7 and dia >= 23) or (mes == 8 and dia <= 22):
+            
+                if signo == "Leo":
+                    print(signo, descripcion)
+        elif (mes == 8 and dia >= 23) or (mes == 9 and dia <= 22):
+           
+                if signo == "Virgo":
+                    print(signo, descripcion)
+        elif (mes == 9 and dia >= 23) or (mes == 10 and dia <= 22):
+            
+                if signo == "Libra":
+                    print(signo, descripcion)
+        elif (mes == 10 and dia >= 23) or (mes == 11 and dia <= 21):
+           
+                if signo == "Escorpión":
+                    print(signo, descripcion)
+        elif (mes == 11 and dia >= 22) or (mes == 12 and dia <= 21):
+            
+                if signo == "Sagitario":
+                    print(signo, descripcion)
+        elif (mes == 12 and dia >= 22) or (mes == 1 and dia <= 19):
+           
+                if signo == "Capricornio":
+                    print(signo, descripcion)
+        else:
+            signo = 'Desconocido'
+            descripcion = 'Fecha fuera del rango de signos zodiacales.'
+            print(f"Tu signo es: {signo} descripcion {descripcion}")
