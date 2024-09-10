@@ -42,28 +42,22 @@ while True:
         elif (mes == 6 and dia >= 21) or (mes == 7 and dia <= 22):            
                 if signo == "Cáncer":
                     print(signo, descripcion)
-        elif (mes == 7 and dia >= 23) or (mes == 8 and dia <= 22):
-            
+        elif (mes == 7 and dia >= 23) or (mes == 8 and dia <= 22):            
                 if signo == "Leo":
                     print(signo, descripcion)
-        elif (mes == 8 and dia >= 23) or (mes == 9 and dia <= 22):
-           
+        elif (mes == 8 and dia >= 23) or (mes == 9 and dia <= 22):           
                 if signo == "Virgo":
                     print(signo, descripcion)
-        elif (mes == 9 and dia >= 23) or (mes == 10 and dia <= 22):
-            
+        elif (mes == 9 and dia >= 23) or (mes == 10 and dia <= 22):            
                 if signo == "Libra":
                     print(signo, descripcion)
-        elif (mes == 10 and dia >= 23) or (mes == 11 and dia <= 21):
-           
+        elif (mes == 10 and dia >= 23) or (mes == 11 and dia <= 21):           
                 if signo == "Escorpión":
                     print(signo, descripcion)
-        elif (mes == 11 and dia >= 22) or (mes == 12 and dia <= 21):
-            
+        elif (mes == 11 and dia >= 22) or (mes == 12 and dia <= 21):            
                 if signo == "Sagitario":
                     print(signo, descripcion)
-        elif (mes == 12 and dia >= 22) or (mes == 1 and dia <= 19):
-           
+        elif (mes == 12 and dia >= 22) or (mes == 1 and dia <= 19):           
                 if signo == "Capricornio":
                     print(signo, descripcion)
         else:
